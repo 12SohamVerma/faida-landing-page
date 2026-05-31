@@ -153,8 +153,17 @@ export default function FooterSection() {
             </svg>
           </a>
         </div>
+        <div className="mb-4 flex flex-wrap items-center justify-center gap-2 text-sm text-muted-foreground">
+          <a href="#" className="hover:text-primary transition-colors duration-150">
+            Privacy Policy
+          </a>
+          <span>|</span>
+          <a href="#" className="hover:text-primary transition-colors duration-150">
+            Terms of Service
+          </a>
+        </div>
         <span className="text-muted-foreground block text-center text-sm">
-          © {new Date().getFullYear()} Faida, All rights reserved
+          © {new Date().getFullYear()} Faida. All rights reserved.
         </span>
       </div>
     </footer>

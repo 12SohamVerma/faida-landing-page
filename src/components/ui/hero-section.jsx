@@ -8,9 +8,18 @@ export default function HeroSection() {
 
       <section
         id="home"
-        className="bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gridBackground.png')] w-full bg-no-repeat bg-cover bg-center text-sm pb-44"
+        className="relative w-full text-sm pb-16 overflow-hidden bg-white bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gridBackground.png')] bg-no-repeat bg-cover bg-center"
+        style={{
+          backgroundImage: [
+            'linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0.85) 6%, rgba(255,255,255,0) 18%)',
+            'linear-gradient(to top, #ffffff 0%, rgba(255,255,255,0.92) 8%, rgba(255,255,255,0) 22%)',
+            'radial-gradient(ellipse 90% 70% at 18% 12%, rgba(255, 210, 170, 0.55) 0%, rgba(255, 220, 185, 0.25) 35%, rgba(255, 255, 255, 0) 68%)',
+            'radial-gradient(ellipse 80% 60% at 75% 35%, rgba(255, 195, 150, 0.35) 0%, rgba(255, 255, 255, 0) 62%)',
+            "url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gridBackground.png')",
+          ].join(', '),
+        }}
       >
-        <div className="flex items-center gap-2 border border-slate-300 hover:border-slate-400/70 rounded-full w-max mx-auto px-4 py-2 mt-40 md:mt-32 transition-colors">
+        <div className="relative z-10 flex items-center gap-2 border border-slate-300 hover:border-slate-400/70 rounded-full w-max mx-auto px-4 py-2 mt-4 md:mt-6 transition-colors">
           <span>New: Learn before you invest with Faida</span>
           <button type="button" className="flex items-center gap-1 font-medium hover:opacity-80 transition-opacity">
             <span>Read more</span>
@@ -26,16 +35,16 @@ export default function HeroSection() {
           </button>
         </div>
 
-        <h5 className="text-4xl md:text-7xl font-medium max-w-[850px] text-center mx-auto mt-8">
+        <h5 className="relative z-10 text-4xl md:text-7xl font-medium max-w-[850px] text-center mx-auto mt-8">
           Start investing with confidence, one small step at a time
         </h5>
 
-        <p className="text-sm md:text-base mx-auto max-w-2xl text-center mt-6 max-md:px-2">
+        <p className="relative z-10 text-sm md:text-base mx-auto max-w-2xl text-center mt-6 max-md:px-2">
           Faida helps students and first-time investors build financial literacy, learn the basics, and
           begin with amounts that feel comfortable.
         </p>
 
-        <div className="mx-auto w-full flex items-center justify-center gap-3 mt-4">
+        <div className="relative z-10 mx-auto w-full flex items-center justify-center gap-3 mt-4">
           <a
             href="#download"
             className="bg-slate-800 hover:bg-black text-white px-6 py-3 rounded-full font-medium transition"

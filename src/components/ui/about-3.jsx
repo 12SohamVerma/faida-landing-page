@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button'
-
 const defaultCompanies = [
   {
     src: 'https://shadcnblocks.com/images/block/logos/company/fictional-company-logo-1.svg',
@@ -62,7 +60,7 @@ export const About3 = ({
   achievements = defaultAchievements,
 }) => {
   return (
-    <section id="about" className="py-32">
+    <section id="about" className="pt-12 pb-32">
       <div className="container mx-auto">
         <div className="mb-14 grid gap-5 text-center md:grid-cols-2 md:text-left">
           <h1 className="text-5xl font-semibold">{title}</h1>
@@ -75,15 +73,12 @@ export const About3 = ({
             className="size-full max-h-[620px] rounded-xl object-cover lg:col-span-2"
           />
           <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
-            <div className="flex flex-col justify-between gap-6 rounded-xl bg-muted p-7 md:w-1/2 lg:w-auto">
+            <div className="flex flex-col gap-6 rounded-xl bg-muted p-7 md:w-1/2 lg:w-auto">
               <img src={breakout.src} alt={breakout.alt} className="mr-auto h-12" />
               <div>
                 <p className="mb-2 text-lg font-semibold">{breakout.title}</p>
                 <p className="text-muted-foreground">{breakout.description}</p>
               </div>
-              <Button variant="outline" className="mr-auto" asChild>
-                <a href={breakout.buttonUrl}>{breakout.buttonText}</a>
-              </Button>
             </div>
             <img
               src={secondaryImage.src}
